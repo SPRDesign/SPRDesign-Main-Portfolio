@@ -132,7 +132,7 @@ export const projectsData = [
     name: 'SPR Fashion 3D',
     category: 'Fashion 3D',
     href: 'https://sprdesign-fashion3d.netlify.app/',
-    technology: 'Astro | Tailwind',
+    technology: 'Astro',
     description: "SPR Design's 3D fashion portfolio, where each image reflects the precision and detail of my latest creations. Explore the fusion of fashion and technology, where digitally modeled garments offer a unique and innovative experience.",
     photos: [
       P4A,
