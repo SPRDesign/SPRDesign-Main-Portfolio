@@ -5,11 +5,14 @@ import {
   FiMail,
 } from 'react-icons/fi';
 
+import Project5PDF from './assets/Style_Savvy_UX-UI.pdf';
+
 // projects images
 import Project1 from './assets/img/projects/p1-ecommerce.png';
 import Project2 from './assets/img/projects/p2-news.png';
 import Project3 from './assets/img/projects/p3-qpqr.png';
 import Project4 from './assets/img/projects/3D-1.png';
+import Project5 from './assets/img/projects/UX-UI-1.png';
 
 
 // projects sub-images
@@ -28,6 +31,10 @@ import P3C from './assets/img/projects/p3-order.png';
 import P4A from './assets/img/projects/3D-2.png';
 import P4B from './assets/img/projects/3D-3.png';
 import P4C from './assets/img/projects/3D-4.png';
+
+import P5A from './assets/img/projects/P5A.png';
+import P5B from './assets/img/projects/P5B.png';
+import P5C from './assets/img/projects/P5C.png';
 
 
 // skills images
@@ -138,6 +145,21 @@ export const projectsData = [
       P4A,
       P4B,
       P4C,
+    ]
+
+  },
+  {
+    id: '5',
+    image: Project5,
+    name: 'Style Savvy',
+    category: 'UI/UX Design',
+    pdf: Project5PDF,
+    technology: 'Figma',
+    description: "Project UX/UI about an application that helps users select, combine, and purchase clothing and accessories, as well as receive personalized style advice.",
+    photos: [
+      P5A,
+      P5B,
+      P5C,
     ]
 
   },

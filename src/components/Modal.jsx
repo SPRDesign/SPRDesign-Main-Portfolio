@@ -39,14 +39,30 @@ const Modal = ({ item, onClose }) => {
         </div>
 
         <div className="flex justify-between items-center mt-4">
-          <a
-            href={item.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-lg bg-pink-900 hover:bg-accent-hover justify-between"
-          >
-            Go to Site
-          </a>
+          {/* Mostrar "Go to Site" solo si el proyecto no es Project5 */}
+          {item.id !== '5' && (
+            <a
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-lg bg-pink-900 hover:bg-accent-hover justify-between"
+            >
+              Go to Site
+            </a>
+          )}
+
+          {/* Mostrar el botón "Ver Proyecto en PDF" solo para Project5 */}
+          {item.id === '5' && (
+            <a
+              href={item.pdf} // Asegúrate de que el enlace del PDF esté presente en los datos del proyecto.
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-lg bg-pink-900 hover:bg-accent-hover"
+            >
+              Ver Proyecto en PDF
+            </a>
+          )}
+
           <button
             className="btn btn-lg bg-pink-900 hover:bg-accent-hover"
             onClick={onClose}
