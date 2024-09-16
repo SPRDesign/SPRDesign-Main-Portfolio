@@ -51,15 +51,15 @@ const Modal = ({ item, onClose }) => {
             </a>
           )}
 
-          {/* Mostrar el botón "Ver Proyecto en PDF" solo para Project5 */}
+          {/* Mostrar botón "Ver PDF" solo para Project5 */}
           {item.id === '5' && (
             <a
-              href={item.pdf} // Asegúrate de que el enlace del PDF esté presente en los datos del proyecto.
+              href={item.pdf} 
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-lg bg-pink-900 hover:bg-accent-hover"
             >
-              Ver Proyecto en PDF
+              See Project
             </a>
           )}
 
